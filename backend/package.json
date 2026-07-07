@@ -5,16 +5,17 @@
   "private": true,
   "scripts": {
     "dev": "bun --watch src/index.ts",
-    "migrate": "bun prisma migrate dev",
-    "generate": "bun prisma generate",
-    "seed": "bun prisma db seed"
+    "db:migrate": "prisma migrate dev",
+    "db:generate": "prisma generate",
+    "db:seed": "prisma db seed"
   },
   "devDependencies": {
     "@types/bun": "latest",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/jsonwebtoken": "^9.0.10",
-    "@types/morgan": "^1.9.10"
+    "@types/morgan": "^1.9.10",
+    "prisma": "^7.8.0"
   },
   "peerDependencies": {
     "typescript": "^5"

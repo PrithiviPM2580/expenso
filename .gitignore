@@ -90,3 +90,5 @@ temp/
 *.pid
 *.seed
 *.pid.lock
+
+/backend/src/generated/prisma
