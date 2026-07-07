@@ -30,6 +30,8 @@
     "express": "^5.2.1",
     "helmet": "^8.2.0",
     "jsonwebtoken": "^9.0.3",
-    "morgan": "^1.11.0"
+    "morgan": "^1.11.0",
+    "zod": "^4.4.3",
+    "zod-express-validator": "^0.1.0"
   }
 }
