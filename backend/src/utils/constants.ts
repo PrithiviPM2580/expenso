@@ -1,6 +1,6 @@
 import type { DefaultCategories } from "../types";
 
-export const defaultCategories: DefaultCategories[] = [
+export const defaultCategories: DefaultCategories = [
   // Expense categories
   {
     name: "Food",
