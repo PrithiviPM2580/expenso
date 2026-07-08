@@ -53,6 +53,7 @@ export const register = async (
   const token = signToken({
     id: user.id,
     email: user.email,
+    name: user.name,
   });
 
   return res.status(201).json({
@@ -96,6 +97,7 @@ export const login = async (
   const token = signToken({
     id: user.id,
     email: user.email,
+    name: user.name,
   });
 
   return res.status(200).json({
