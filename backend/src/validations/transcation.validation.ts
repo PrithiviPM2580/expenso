@@ -20,7 +20,7 @@ export const createTransactionSchema = z.object({
   type: z.enum(["income", "expense"]),
   description: z.string().trim().optional(),
   notes: z.string().trim().optional(),
-  transactionDate: z.iso.datetime(),
+  transactionDate: z.iso.date(),
 });
 
 export const updateTransactionSchema = z.object({
@@ -29,7 +29,7 @@ export const updateTransactionSchema = z.object({
   type: z.enum(["income", "expense"]).optional(),
   description: z.string().trim().optional(),
   notes: z.string().trim().optional(),
-  transactionDate: z.iso.datetime().optional(),
+  transactionDate: z.iso.date().optional(),
 });
 
 export type TransactionQuery = z.infer<typeof transactionQuerySchema>;
