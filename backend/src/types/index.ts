@@ -1,6 +1,7 @@
 import { type Request } from "express";
 import type { Category } from "../generated/prisma/client";
 type CategoryType = "income" | "expense";
+import type { User } from "../generated/prisma/client";
 
 export type DefaultCategories = Pick<
   Category,
@@ -13,7 +14,4 @@ export type TypeRequest<
   TQuery = unknown,
 > = Request<TParams, unknown, TBody, TQuery>;
 
-export interface Payload {
-  id: number;
-  email: string;
-}
+export type Payload = Pick<User, "id" | "email" | "name">;
